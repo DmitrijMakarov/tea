@@ -11,8 +11,7 @@ class Vote(models.Model):
 
 class Type(models.Model):
     name = models.CharField(max_length=200)
-    combining_types = models.JSONField()  # сочетающиеся товары
-    not_combining_types = models.JSONField()  # несочетающиеся товары
+    products = models.JSONField()  # список сочетающихся и несочетающихся товаров
 
 
 class Cart(models.Model):
