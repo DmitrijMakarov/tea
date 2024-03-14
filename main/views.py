@@ -34,3 +34,10 @@ def login_page(request: WSGIRequest):
         'menu': get_menu_context()
     }
     return render(request, 'pages/time.html', context)
+
+
+def delivery_page(request):
+    context = {
+
+    }
+    return render(request, 'pages/delivery.html', context)
