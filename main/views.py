@@ -24,7 +24,7 @@ def time_page(request: WSGIRequest):
         'time': datetime.datetime.now().time(),
         'menu': get_menu_context()
     }
-    return render(request, 'pages/time.html', context)
+    return render(request, 'pages/vote.html', context)
 
 
 def login_page(request: WSGIRequest):
