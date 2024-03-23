@@ -1,16 +1,34 @@
 {% extends 'base/base.html' %}
 
 {% block content %}
+    <style>
+     body {
+       .layer1 {
+        margin-left: 10%; /* Отступ слева */
+       }
+       .layer2 {
+        margin-top: 200px; /* Отступ сверху */
+       }
+       .layer3 {
+        margin-top: 50px; /* Отступ сверху */
+       }
+     }
+    </style>
     <div class="text-container">
         <p style="text-indent:20px">Доставка</p>
     </div>
     <div>
         <div class="text-container">
-            <p style="text-indent:300px">Заказано</p>
+            <p style="text-indent:265px">Заказано</p>
         </div>
-        <div class="container">
+        <div class="container-fluid layer1">
             <div class="row">
-                <div class="col-md-3 col-sm-6 mb-4">
+                <div class="col-md-auto">
+                  <div class="layer2">
+                    <button type="button" class="btn btn-light"><</button>
+                  </div>
+                </div>
+                <div class="col-md-auto">
                   <div class="card" style="width: 18rem;">
                     <img src="https://placehold.co/270x270" class="card-img-top" alt="...">
                     <div class="card-body">
@@ -21,7 +39,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-md-3 col-sm-6 mb-4">
+                <div class="col-md-auto">
                   <div class="card" style="width: 18rem;">
                     <img src="https://placehold.co/270x270" class="card-img-top" alt="...">
                     <div class="card-body">
@@ -32,7 +50,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-md-3 col-sm-6 mb-4">
+                <div class="col-md-auto">
                   <div class="card" style="width: 18rem;">
                     <img src="https://placehold.co/270x270" class="card-img-top" alt="...">
                     <div class="card-body">
@@ -43,7 +61,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-md-3 col-sm-6 mb-4">
+                <div class="col-md-auto">
                   <div class="card" style="width: 18rem;">
                     <img src="https://placehold.co/270x270" class="card-img-top" alt="...">
                     <div class="card-body">
@@ -52,55 +70,70 @@
                       <p class="card-text">34391 ₽</p>
                       <a href="#" class="btn btn-primary">Отслеживание</a>
                     </div>
+                  </div>
+                </div>
+                <div class="col-md-auto">
+                  <div class="layer2">
+                    <button type="button" class="btn btn-light">></button>
                   </div>
                 </div>
             </div>
         </div>
 
-        <div class="text-container">
-            <p style="text-indent:300px">Вы смотрели</p>
+        <div class="text-container layer3">
+            <p style="text-indent:265px">Вы смотрели</p>
         </div>
 
-        <div class="container">
+        <div class="container-fluid layer1">
             <div class="row">
-                <div class="col-md-3 col-sm-6 mb-4">
+                <div class="col-md-auto">
+                  <div class="layer2">
+                    <button type="button" class="btn btn-light"><</button>
+                  </div>
+                </div>
+                <div class="col-md-auto">
                   <div class="card" style="width: 18rem;">
                     <img src="https://placehold.co/270x270" class="card-img-top" alt="...">
                     <div class="card-body">
                       <h5 class="card-title">Название продукта</h5>
                       <p class="card-text">Небольшое описание</p>
-                      <p class="card-text">34393 ₽</p>
+                      <p class="card-text">34391 ₽</p>
                     </div>
                   </div>
                 </div>
-                <div class="col-md-3 col-sm-6 mb-4">
+                <div class="col-md-auto">
                   <div class="card" style="width: 18rem;">
                     <img src="https://placehold.co/270x270" class="card-img-top" alt="...">
                     <div class="card-body">
                       <h5 class="card-title">Название продукта</h5>
                       <p class="card-text">Небольшое описание</p>
-                      <p class="card-text">34393 ₽</p>
+                      <p class="card-text">34391 ₽</p>
                     </div>
                   </div>
                 </div>
-                <div class="col-md-3 col-sm-6 mb-4">
+                <div class="col-md-auto">
                   <div class="card" style="width: 18rem;">
                     <img src="https://placehold.co/270x270" class="card-img-top" alt="...">
                     <div class="card-body">
                       <h5 class="card-title">Название продукта</h5>
                       <p class="card-text">Небольшое описание</p>
-                      <p class="card-text">34393 ₽</p>
+                      <p class="card-text">34391 ₽</p>
                     </div>
                   </div>
                 </div>
-                <div class="col-md-3 col-sm-6 mb-4">
+                <div class="col-md-auto">
                   <div class="card" style="width: 18rem;">
                     <img src="https://placehold.co/270x270" class="card-img-top" alt="...">
                     <div class="card-body">
                       <h5 class="card-title">Название продукта</h5>
                       <p class="card-text">Небольшое описание</p>
-                      <p class="card-text">34393 ₽</p>
+                      <p class="card-text">34391 ₽</p>
                     </div>
+                  </div>
+                </div>
+                <div class="col-md-auto">
+                  <div class="layer2">
+                    <button type="button" class="btn btn-light">></button>
                   </div>
                 </div>
             </div>
