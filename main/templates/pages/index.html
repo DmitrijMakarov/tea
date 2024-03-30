@@ -1,0 +1,207 @@
+{% load static %}
+
+<body>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  <link href="{% static '/css/index.css' %}" rel="stylesheet">
+  <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="{% static '/img/set1.jpg' %}" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h2 class="carousel_text">ALWAYS FRESH TEA</h2>
+       </div>
+      </div>
+      <div class="carousel-item">
+        <img src="{% static '/img/set2.jpg' %}" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h2 class="carousel_text">SPRING SALE!-70%</h2>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="{% static '/img/set3.jpg' %}" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h2 class="carousel_text">PERFECT GIFT</h2>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <div class="container-fluid_row">
+    <div class="card text-center" style="width: 800px;">
+      <img src="{% static '/img/набор_чай.png' %}" class="card-img-top" alt="...">
+      <div class="card-body">
+        <a class="card-title text-white" href="#">Чайные листья</a>
+      </div>
+    </div>
+    <div class="card text-center ms-auto" style="width: 800px;">
+      <img src="{% static '/img/набор_добавки.png' %}" class="card-img-top" alt="...">
+      <div class="card-body">
+        <a class="card-title text-white" href="#">Добавки</a>
+      </div>
+    </div>
+  </div>
+  <h1 class="text-center" >Новинки</h1>
+
+  <div class="card-group">
+   <div class="card_new mb-3" style="max-width: 18rem;">
+      <img src="{% static 'img/new_tea1.png' %}" class="card-img-top" alt="...">
+      <div class="card-body_news">
+        <a class="card-title_news">Какой-то чай</a>
+        <p class="card-text">Красивое описание</p>
+        <p class="card-text">Цена</p>
+      </div>
+    </div>
+
+    <div class="card_new mb-3" style="max-width: 18rem;">
+      <img src="{% static '/img/new_tea2.png' %}" class="card-img-top" alt="...">
+      <div class="card-body_news">
+        <a class="card-title_news">Какой-то чай</a>
+        <p class="card-text">Красивое описание</p>
+        <p class="card-text">Цена</p>
+      </div>
+    </div>
+
+   <div class="card_new mb-3" style="max-width: 18rem;">
+      <img src="{% static '/img/new_tea3.png' %}" class="card-img-top" alt="...">
+      <div class="card-body_news">
+        <a class="card-title_news">Какой-то чай</a>
+        <p class="card-text">Красивое описание</p>
+        <p class="card-text">Цена</p>
+      </div>
+    </div>
+
+   <div class="card_new mb-3" style="max-width: 18rem;">
+      <img src="{% static '/img/new_tea4.png' %}" class="card-img-top" alt="...">
+      <div class="card-body_news">
+        <a class="card-title_news">Какой-то чай</a>
+        <p class="card-text">Красивое описание</p>
+        <p class="card-text">Цена</p>
+      </div>
+    </div>
+  </div>
+  <div class="d-grid gap-2 col-4 mx-auto">
+    <button class="more_tea">Показать больше</button>
+  </div>
+  <div class="stock">
+    <div class="card text-bg-dark">
+      <img src="{% static '/img/акция.png' %}" class="card-img" alt="...">
+      <div class="card-img-overlay">
+        <h5 class="card-title_stock">SPRING SALE!-70%</h5>
+      </div>
+    </div>
+  </div>
+
+  <h1 class="text-center">Популярные коллекции</h1>
+  <div class="card-group">
+   <div class="card_new mb-3" style="max-width: 18rem;">
+      <img src="{% static '/img/new_tea5.png' %}" class="card-img-top" alt="...">
+      <div class="card-body_news">
+        <a class="card-title_news">Какой-то чай</a>
+        <p class="card-text">Красивое описание</p>
+        <p class="card-text">Цена</p>
+      </div>
+    </div>
+
+    <div class="card_new mb-3" style="max-width: 18rem;">
+      <img src="{% static '/img/new_tea6.png' %}" class="card-img-top" alt="...">
+      <div class="card-body_news">
+        <a class="card-title_news">Какой-то чай</a>
+        <p class="card-text">Красивое описание</p>
+        <p class="card-text">Цена</p>
+      </div>
+    </div>
+
+   <div class="card_new mb-3" style="max-width: 18rem;">
+      <img src="{% static '/img/supplement1.png' %}" class="card-img-top" alt="...">
+      <div class="card-body_news">
+        <a class="card-title_news">Какая-то добавка</a>
+        <p class="card-text">Красивое описание</p>
+        <p class="card-text">Цена</p>
+      </div>
+    </div>
+
+   <div class="card_new mb-3" style="max-width: 18rem;">
+      <img src="{% static '/img/supplement2.png' %}" class="card-img-top" alt="...">
+      <div class="card-body_news">
+        <a class="card-title_news">Какая-то добавка</a>
+        <p class="card-text">Красивое описание</p>
+        <p class="card-text">Цена</p>
+      </div>
+    </div>
+  </div>
+  <div class="d-grid gap-2 col-4 mx-auto">
+    <button class="more_tea">Показать больше</button>
+  </div>
+  <h1 class="blog_text_hi text-center" >Блоги</h1>
+  <div class="carousel_blog">
+    <div id="carouselExampleCaptions" class="carousel slide">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="{% static '/img/blog1.png' %}" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <div class="blog_text">
+              <a class="blog_link" href="#">Состав чая</a>
+              <h5>28 просмотров</h5>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="{% static '/img/blog2.jpg' %}" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <div class="blog_text">
+              <a class="blog_link" href="#">О полезных свойствах чая</a>
+              <h5>127 просмотров</h5>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="{% static '/img/blog3.jpg' %}" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <div class="blog_text">
+              <a class="blog_link" href="#">Польза зеленого чая</a>
+              <h5>17 просмотров</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+  <div class="d-grid gap-2 col-4 mx-auto">
+    <button class="more_tea">Показать больше</button>
+  </div>
+  <div class="send">
+    <div class="card text-bg-dark">
+      <img src="{% static '/img/send.png' %}" class="card-img" alt="...">
+      <div class="card-img-overlay_text">
+        <img src="{% static '/img/почта.png' %}">
+        <h3 class="card-title_send">Скидка -10%</h3>
+        <p class="card-title_send">За подписку на наши новости</p>
+        <div class="hstack gap-3">
+          <input class="form-control me-auto" type="text" placeholder="Email">
+          <button type="button" class="btn"><img src="{% static '/img/send-logo.png' %}"></button>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
