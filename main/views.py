@@ -19,10 +19,3 @@ def index_page(request: WSGIRequest):
 
 
 
-def login_page(request: WSGIRequest):
-    context = {
-        'pagename': 'Текущее время',
-        'time': datetime.datetime.now().time(),
-        'menu': get_menu_context()
-    }
-    return render(request, 'pages/time.html', context)
