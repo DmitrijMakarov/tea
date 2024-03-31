@@ -12,10 +12,12 @@ def get_menu_context():
 
 
 def index_page(request: WSGIRequest):
-    context = {
-        'menu': get_menu_context()
-    }
+    context = {}
     return render(request, 'pages/index.html', context)
+
+def blogs_page(request: WSGIRequest):
+    context = {}
+    return render(request, 'pages/blogs.html', context)
 
 
 
