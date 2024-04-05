@@ -1,5 +1,3 @@
-import datetime
-
 from django.core.handlers.wsgi import WSGIRequest
 from django.shortcuts import render
 
@@ -11,6 +9,3 @@ def index_page(request: WSGIRequest):
 def blogs_page(request: WSGIRequest):
     context = {}
     return render(request, 'pages/blogs.html', context)
-
-
-
