@@ -1,0 +1,8 @@
+{% autoescape off%}
+Здравствуйте, {{ user.username }}!
+
+Чтобы подтвердить почту перейдите по ссылке:
+
+http://{{domain}}{% url 'activate' uid64=uid token %}
+
+{% endautoescape %}
