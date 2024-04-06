@@ -1,10 +1,342 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
-</head>
+<html>
+<meta charset="utf-8">
+<style>
+body {
+   font-family: Arial, sans-serif;
+   margin: 0;
+   padding: 0;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 100vh;
+   color: #333;
+}
+
+header {
+   position: fixed;
+   top: 0;
+   width: 100%;
+   background-color: #f8f9fa;
+   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+   display: flex;
+   justify-content: space-around;
+   list-style: none;
+   padding: 0;
+}
+
+nav ul li a {
+   text-decoration: none;
+   color: #333;
+}
+
+main {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   margin-top: 50px;
+}
+
+.product {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   width: 100%;
+   padding-top: 100px;
+}
+.pr_1{
+  width:100px;
+  height:100px;
+}
+.product img {
+   width: 100px;
+   height: 100px;
+   background-color: #f8f9fa;
+   margin-right: 20px;
+}
+
+.product p {
+   width: 50%;
+}
+
+.product button {
+   background-color: #f8f9fa;
+   border: none;
+   padding: 10px 20px;
+   margin-top: 20px;
+}
+
+.blog {
+   width: 80%;
+   margin-top: 50px;
+}
+
+.blog article {
+   border-bottom: 1px solid #ddd;
+   padding: 20px 0;
+}
+
+.blog article:last-child {
+   border-bottom: none;
+}
+.buy{
+  width:400px;
+  height:100px;
+  background-color:red;
+  font-size:26px;
+  color:white;
+  font-family:sans-serif;
+  margin-left:50px;
+}
+nav ul li button {
+   width:75px;
+   height:75px;
+   font-family:sens-serif;
+   font-size:15px;
+}
+nav ul li button:hover {
+   background-color:black;
+   color:white;
+}
+.charact{
+  font-family:sens-serif;
+  font-size:18px;
+  width:800px;
+  height:250px;
+  margin-right:50px;
+}
+.char{
+  font-family:sens-serif;
+  font-size:28px;
+  margin-right:400px;
+}
+1{
+   display: flex;
+   justify-content: space-around;
+   list-style: none;
+
+}
+2{
+   display: flex;
+   justify-content: space-around;
+   list-style: none;
+
+}
+.deliv{
+  width:300px;
+  height:50px;
+  font-family:sens-serif;
+  font-size:18px;
+  margin-left:300px;
+  border:3px solid red;
+  text-align:center;
+  padding-top:25px;
+}
+.del{
+  font-family:sens-serif;
+  font-size:28px;
+  margin-left:500px;
+}
+.additions{
+  margin-left:-200px;
+}
+
+3{
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+}
+.wrap {
+ width: 1310px;
+ margin-left:0px;
+ height: 120px;
+}
+.add {
+  float: left;
+  line-height: 120px;
+  font-size: 40px;
+  color: white;
+  width: 300px;
+  height: 300px;
+  background-repeat: no-repeat;
+  margin-right: 10px;
+  text-align: center;
+  background-image: url();
+  background-position:center;
+  background-size:450px 450px;
+}
+.wrap1 {
+ width: 1310px;
+ margin-left:0px;
+ height: 120px;
+}
+.add1 {
+  float: left;
+  line-height: 120px;
+  font-size: 40px;
+  color: white;
+  width: 300px;
+  height: 300px;
+  background-repeat: no-repeat;
+  margin-right: 10px;
+  text-align: center;
+  background-image: url();
+  background-position:center;
+  background-size:450px 450px;
+}
+.additions1{
+  margin-left:-200px;
+  text-align:left;
+}
+.names {
+ width: 1310px;
+ margin-left:0px;
+ height: 40px;
+}
+.pr {
+  float: left;
+  line-height: 40px;
+  font-size: 20px;
+  color: black;
+  width: 300px;
+  height: 100px;
+  margin-right: 10px;
+  text-align: center;
+  margin-top:px;
+}
+.names1 {
+ width: 1310px;
+ margin-left:0px;
+ height: 40px;
+}
+.pr1 {
+  float: left;
+  line-height: 40px;
+  font-size: 20px;
+  font-family:sens-serif;
+  color: black;
+  width: 300px;
+  height: 100px;
+  margin-right: 10px;
+  text-align: center;
+  margin-top:px;
+}
+.comment{
+  width:800px;
+  font-size: 18px;
+  font-family:sens-serif;
+  margin-left:-130px;
+}
+.comm{
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+}
+.publ{
+  width:200px;
+  font-size: 18px;
+  font-family:sens-serif;
+  margin-left:-220px;
+  text-align:center;
+}
+.publ:hover{
+   background-color:black;
+   color:white;
+}
+</style>
 <body>
-$END$
+   <header>
+       <nav>
+           <ul>
+               <li><a href="#">Собери комплект</a></li>
+               <li><a href="#">1.Выбери чай</a></li>
+               <li><a href="#">2.Выбери добавки</a></li>
+               <li><a href="#">3.Подбери посуду</a></li>
+           </ul>
+       </nav>
+   </header>
+   <main>
+       <section>
+       </section>
+       <section>
+           <img src="dushica.png" style="height:500px;width:500px;margin-top:1800px;margin-left:0px;">
+           <p></p>
+           <button class="buy">Добавить в корзину</button>
+         <nav>
+           <ul>
+             <li><button>100г</button></li>
+             <li><button>200г</button></li>
+             <li><button>250г</button></li>
+             <li><button>300г</button></li>
+             <li><button>500г</button></li>
+             <li><button>750г</button></li>
+             <li><button>1000г</button></li>
+           </ul>
+         </nav>
+       </section>
+       <section class="blog">
+           <article>
+             <nav class="2">
+               <ul>
+                 <li><h2 class="char">Характеристики</h2></li>
+                 <li><h2 class="del">Варианты доставки</h2></li>
+               </ul>
+             </nav>
+             <nav class="1">
+               <ul>
+                 <li><p class="charact">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed feugiat sapien non nibh venenatis, at laoreet enim volutpat. Pellentesque lectus orci, ultrices euismod est in, posuere dictum sem. Etiam nulla neque, finibus eu efficitur eu, fermentum quis elit. Morbi in sem id nibh consectetur aliquam. Vestibulum semper massa in laoreet auctor. Fusce a egestas felis. Nam facilisis ullamcorper sem eu pellentesque. Sed a eros quis nibh gravida interdum. Curabitur urna dolor, tempus id nisi interdum, rutrum consectetur ipsum. Duis placerat augue condimentum nulla rutrum, sed sollicitudin leo ornare.</p></li>
+                 <li><p class="deliv">Курьером по вашему адресу</p><p class="deliv">Забрать в одном из магазинов</p><p class="deliv">Заказать доставку в один из магазинов</p><p class="deliv">Забрать из пункта самовывоза</p></li>
+               </ul>
+             </nav>
+           </article>
+         <article>
+          <h2 class="additions">С этим товаром смотрят</h2>
+            <div class="wrap">
+                <button class="add"></button>
+                <button class="add"></button>
+                <button class="add"></button>
+                <button class="add"></button>
+            </div>
+            <div class="names">
+                <p class="pr">Название продукта</p>
+                <p class="pr">Название продукта</p>
+                <p class="pr">Название продукта</p>
+                <p class="pr">Название продукта</p>
+            </div>
+         </article>
+        <article>
+         <h2 class="additions1">С этим товаром рекомендуем</h2>
+          <div class="wrap1">
+             <button class="add1"></button>
+             <button class="add1"></button>
+             <button class="add1"></button>
+             <button class="add1"></button>
+          </div>
+          <div class="names1">
+                <p class="pr1">Название продукта</p>
+                <p class="pr1">Название продукта</p>
+                <p class="pr1">Название продукта</p>
+                <p class="pr1">Название продукта</p>
+          </div>
+        </article>
+        <div>
+          <h2>Оставьте отзыв</h2>
+          <div class="comm">
+            <input class="comment" type="text"  name="name" required minlength="1" maxlength="10000" size="10000" />
+            <button class="publ">Опубликовать</button>
+          </div>
+        </div>
+        <div>
+          <h3>Пользователь</h3>
+          <p>Комментарий</p>
+          <h3>Пользователь</h3>
+          <p>Комментарий</p>
+          <h3>Пользователь</h3>
+          <p>Комментарий</p>
+        </div>
+       </section>
+   </main>
 </body>
 </html>
