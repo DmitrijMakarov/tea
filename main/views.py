@@ -13,3 +13,9 @@ def blogs_page(request: WSGIRequest):
 def login_page(request: WSGIRequest):
     context = {}
     return render(request, 'registration/login.html', context)
+
+def login_page(request: WSGIRequest):
+    context = {
+
+    }
+    return render(request, 'pages/blog.html', context)
