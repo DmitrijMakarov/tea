@@ -34,3 +34,8 @@ def login_page(request: WSGIRequest):
         'menu': get_menu_context()
     }
     return render(request, 'pages/time.html', context)
+
+
+def blogs_page(request: WSGIRequest):
+    context = {}
+    return render(request, 'pages/blogs.html', context)
