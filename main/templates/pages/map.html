@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Yandex.Maps Template</title>
+    <link href="https://getbootstrap.com/docs/5.3/dist/css/bootstrap.min.css"
+          rel="stylesheet" crossorigin="anonymous">
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=fef7aab7-7875-43d7-9c1e-11241d0d04cf
+&lang=ru_RU"></script>
+</head>
+
+<body>
+
+    <main>
+        <div class="container">
+            <div class="row mt-3">
+                <div class="col">
+                    <h1 class="h2">Карта</h1>
+                    <hr>
+                    <div id="map" style="height: 600px;"></div>
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col">
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script type="text/javascript">
+        ymaps.ready(init);
+        function init(){
+            var myMap = new ymaps.Map("map",{
+                center: [55.9117350, 37.7189239],
+                zoom:16
+            })
+            var myPlacemark = new ymaps.Placemark([55.9117350, 37.7189239], {},{
+                iconLayout: 'default#image',
+                iconImageHref: 'https://static.tildacdn.com/tild3931-6333-4563-b537-376334356561/adres_.png',
+                iconImageSize: [40,40],
+                iconImageOffset: [-5,-15]
+            })
+            myMap.geoObjects.add(myPlacemark);
+        }
+    </script>
+</body>
+</html>
+
