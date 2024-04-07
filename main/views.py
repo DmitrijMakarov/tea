@@ -6,9 +6,9 @@ def index_page(request: WSGIRequest):
    context = {}
    return render(request, 'pages/index.html', context)
 
-def blogs_page(request: WSGIRequest):
+def blog_card_page(request: WSGIRequest):
    context = {}
-   return render(request, 'pages/blogs.html', context)
+   return render(request, 'pages/blog_card.html', context)
 
 def login_page(request: WSGIRequest):
    context = {}
