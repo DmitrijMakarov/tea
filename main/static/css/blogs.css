@@ -1,0 +1,15 @@
+.card-text {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+a:hover{
+    color: #365e40 !important;
+    text-decoration: none;
+    transition: .3s;
+}
+
+.btn {
+   margin-top: 100%;
+}

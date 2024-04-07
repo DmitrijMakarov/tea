@@ -1,0 +1,103 @@
+{% load static %}
+{% block header %}
+<link href="{% static '/css/header.css' %}" rel="stylesheet">
+<nav class="navbar_element navbar-expand-lg border-bottom">
+    <div class="container-fluid_element ">
+      <text class="nav-item_element">Ваш регион доставки:</text>
+      <select class="form-select_city" aria-label="City">
+        <option selected>Москва</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+      </select>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link_head active" aria-current="page" href="#">Помощь</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link_head" href="/blogs/">Блоги</a>
+          </li>
+        </ul>
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item1">
+            <div class="header_text"><img class="img_head" src="{% static '/img/delivery_logo.png' %}" alt="">Бесплатная доставка</div>
+          </li>
+          <li class="nav-item1">
+            <div class="header_text"><img class="img_head" src="{% static '/img/payment_logo.png' %}" alt="">Оплата при получении</div>
+          </li>
+          <li class="nav-item1">
+            <div class="header_text"><img class="img_head" src="{% static '/img/refund_logo.png' %}" alt="">Возврат в течение 14 дней</div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<nav class="navbar_head navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse row" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0 col">
+        <li class="nav-item">
+          <a class="nav-link_head2 active" aria-current="page" href="#">Чайные листья</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link_head2" href="#">Наборы</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link_head2" href="#">Конструктор</a>
+        </li>
+      </ul>
+      <ul class="navbar-nav col">
+        <li class="nav-item mx-auto">
+          <a class="nav-link" href="/index/"><img class="main_logo" src="{% static '/img/logo.png' %}" alt=""></a>
+        </li>
+      </ul>
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0 col">
+        <li class="nav-item text-centre">
+          <a class="nav-link active" href="#"><img class="img_head" src="{% static '/img/Значок входа.png' %}" alt=""></a>
+          <a class="nav-link_head2 active" aria-current="page" href="#">ВОЙТИ</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#"><img class="img_head" src="{% static '/img/Значок избранного.png' %}" alt=""></a>
+          <a class="nav-link_head2" href="#">ИЗБРАННОЕ</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#"><img class="img_head" src="{% static '/img/Значок корзины.png' %}" alt=""></a>
+          <a class="nav-link_head2" href="#">КОРЗИНА</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#"><img class="img_head" src="{% static '/img/Значок поиска.png' %}" alt=""></a>
+          <a class="nav-link_head2" href="#">ПОИСК</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<nav class="navbar navbar-expand-lg bg-body-tertiary bg-light border-bottom border-body" data-bs-theme="light">
+    <div class="container-fluid">
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav_menu mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link_head2 active" aria-current="page" href="#">Новинки</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link_head2" href="#">Чайные листья</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link_head2" href="#">Добавки</a>
+          </li>
+        </ul>
+        <ul class="navbar-nav_menu ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link_head2 active" aria-current="page" href="#">Посуда</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link_head2" href="#">Распродажа</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+{% endblock %}

@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Display:ital,wdth,wght@0,75,800;1,75,800&display=swap')
+
+. sans-serif{
+  font-family: "Noto Sans Display", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-variation-settings: "wdth" 75;
+}
+
+body {
+    margin: 0;
+    font-family: "Noto Sans Display", sans-serif !important;
+    font-weight: 700 !important;
+}
+
+.navbar_element {
+  background-color: black;
+  height: 60px;
+}
+
+
+.container-fluid_element{
+    display: flex;
+    align-items: center;
+}
+
+.nav-item_element{
+    margin: 17px 10px;
+    color: #fff;
+    margin-right: 5px;
+}
+
+.header_text {
+    color: #fff;
+    margin-right: 20px;
+}
+
+.form-select_city{
+  weight: 200px;
+}
+
+.nav-item {
+    color: #000;
+    transition: .3s;
+    display: flex;
+    align-items: center;
+}
+
+.nav-item:hover{
+    transform: scale(1.1) !important;
+}
+
+a:hover{
+    color: #365e40 !important;
+    text-decoration: none;
+}
+
+.navbar-nav_menu {
+    margin: 0px 180px;
+    display: flex;
+    align-items: center;
+}
+.nav-link_head{
+    margin-right: 40px;
+    margin-left: 50px;
+    color: #fff;
+    text-decoration: none;
+}
+.navbar_head .main_logo{
+  margin-right 50%;
+}
+
+.img_head {
+    margin-right: 5px;
+}
+
+.nav-link_head2{
+    color: #111;
+    margin-right: 30px;
+    text-decoration: none;
+}
