@@ -1,5 +1,8 @@
 {% extends 'base/base.html' %}
 {% load static %}
+
+{% block extra_css %} <link href="{% static '/css/blogs.css' %}" rel="stylesheet">{% endblock %}
+
 {% block content %}
   <body>
     <h2 class="text-center">Все блоги</h2>
