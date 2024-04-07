@@ -1,0 +1,195 @@
+{% extends 'base/base.html' %}
+
+{% block content %}
+    <style>
+     body {
+       .layer1 {
+         margin-left: 10%; /* Отступ слева */
+       }
+       .layer2 {
+         margin-top: 200px; /* Отступ сверху */
+       }
+       .layer3 {
+         margin-top: 50px; /* Отступ сверху */
+       }
+       .layer4 {
+         margin-left: 235px; /* Отступ слева */
+       }
+       .layer5 {
+         margin-top: 17px; /* Отступ сверху */
+       }
+       .layer6 {
+         margin-top: -30px; /* Отступ сверху */
+       }
+        .btn-circle {
+          width: 38px;
+          height: 38px;
+          border-radius: 19px;
+          text-align: center;
+          padding-left: 0;
+          padding-right: 0;
+          font-size: 16px;
+        }
+     }
+    </style>
+    <div class="text-container">
+        <p style="text-indent:20px">Доставка</p>
+    </div>
+    <div>
+        <div class="text-container">
+            <p style="text-indent:265px">Заказано</p>
+        </div>
+        <div class="container-fluid layer1">
+            <div class="row">
+                <div class="col-md-auto">
+                  <div class="layer2">
+                    <button type="button" class="btn btn-light"><</button>
+                  </div>
+                </div>
+                <div class="col-md-auto">
+                  <div class="card" style="width: 18rem;">
+                    <p style="text-indent:200px; background-color: #EB5757; color: FFFFFF">Оплачен</p>
+                    <img src="https://placehold.co/270x270" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Название продукта</h5>
+                      <p class="card-text">Небольшое описание</p>
+                      <p class="card-text">34392 ₽</p>
+                      <a href="#" class="btn btn-primary btn-dark">Отслеживание</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-auto">
+                  <div class="card" style="width: 18rem;">
+                    <p style="text-indent:200px; background-color: #EB5757; color: FFFFFF">Оплачен</p>
+                    <img src="https://placehold.co/270x270" class="card-img-top" alt="...">
+                    <div class="card-body ">
+                      <h5 class="card-title">Название продукта</h5>
+                      <p class="card-text">Небольшое описание</p>
+                      <div class="row">
+                        <div class="col-md-auto">
+                          <p class="card-text"> ̶3̶4̶3̶9̶2̶ ̶₽̶</p>
+                        </div>
+                        <div class="col-md-auto">
+                          <p class="card-text" style="color: EB5757">17000 ₽</p>
+                        </div>
+                      </div>
+                      <div class="layer5">
+                        <a href="#" class="btn btn-primary btn-dark">Отслеживание</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-auto">
+                  <div class="card" style="width: 18rem;">
+                    <p style="text-indent:200px; background-color: #EB5757; color: FFFFFF">Оплачен</p>
+                    <img src="https://placehold.co/270x270" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Название продукта</h5>
+                      <p class="card-text">Небольшое описание</p>
+                      <p class="card-text">34392 ₽</p>
+                      <a href="#" class="btn btn-primary btn-dark">Отслеживание</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-auto">
+                  <div class="card" style="width: 18rem;">
+                    <p style="text-indent:200px; background-color: #EB5757; color: FFFFFF">Оплачен</p>
+                    <img src="https://placehold.co/270x270" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Название продукта</h5>
+                      <p class="card-text">Небольшое описание</p>
+                      <p class="card-text">34392 ₽</p>
+                      <a href="#" class="btn btn-primary btn-dark">Отслеживание</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-auto">
+                  <div class="layer2">
+                    <button type="button" class="btn btn-light">></button>
+                  </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-container layer3">
+            <p style="text-indent:265px">Вы смотрели</p>
+        </div>
+
+        <div class="container-fluid layer1">
+            <div class="row">
+                <div class="col-md-auto">
+                  <div class="layer2">
+                    <button type="button" class="btn btn-light"><</button>
+                  </div>
+                </div>
+                <div class="col-md-auto">
+                  <div class="card" style="width: 18rem;">
+                    <div class="layer4">
+                      <button type="button" class="btn btn-primary btn-circle btn-dark">★</button>
+                    </div>
+                    <img src="https://placehold.co/270x270" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Название продукта</h5>
+                      <p class="card-text">Небольшое описание</p>
+                      <p class="card-text">34392 ₽</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-auto">
+                  <div class="card" style="width: 18rem;">
+                    <div class="layer4">
+                      <button type="button" class="btn btn-primary btn-circle btn-light">☆</button>
+                    </div>
+                    <img src="https://placehold.co/270x270" class="card-img-top" alt="...">
+                    <p style="text-indent:10px; background-color: #EB5757; color: FFFFFF">-50%</p>
+                    <div class="card-body">
+                      <div class="layer6">
+                        <h5 class="card-title">Название продукта</h5>
+                        <p class="card-text">Небольшое описание</p>
+                        <div class="row">
+                          <div class="col-md-auto">
+                            <p class="card-text"> ̶3̶4̶3̶9̶2̶ ̶₽̶</p>
+                          </div>
+                          <div class="col-md-auto">
+                            <p class="card-text" style="color: EB5757">17000 ₽</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-auto">
+                  <div class="card" style="width: 18rem;">
+                    <div class="layer4">
+                      <button type="button" class="btn btn-primary btn-circle btn-light">☆</button>
+                    </div>
+                    <img src="https://placehold.co/270x270" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Название продукта</h5>
+                      <p class="card-text">Небольшое описание</p>
+                      <p class="card-text">34392 ₽</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-auto">
+                  <div class="card" style="width: 18rem;">
+                    <div class="layer4">
+                      <button type="button" class="btn btn-primary btn-circle btn-light">☆</button>
+                    </div>
+                    <img src="https://placehold.co/270x270" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Название продукта</h5>
+                      <p class="card-text">Небольшое описание</p>
+                      <p class="card-text">34392 ₽</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-auto">
+                  <div class="layer2">
+                    <button type="button" class="btn btn-light">></button>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
