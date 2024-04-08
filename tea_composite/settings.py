@@ -14,7 +14,8 @@ from django.core.management.utils import get_random_secret_key
 SECRET_KEY = get_random_secret_key()
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
+DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 ALLOWED_HOSTS = []
 
@@ -42,7 +43,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'simple_votings.urls'
+ROOT_URLCONF = 'tea_composite.urls'
 
 TEMPLATES = [
     {
@@ -62,7 +63,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'simple_votings.wsgi.application'
+WSGI_APPLICATION = 'tea_composite.wsgi.application'
 
 
 # Database
