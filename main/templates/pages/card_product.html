@@ -1,5 +1,6 @@
-<html>
-<meta charset="utf-8">
+{% extends 'base/base.html' %}
+{% load static %}
+{% block content %}
 <style>
 body {
    font-family: Arial, sans-serif;
@@ -247,7 +248,7 @@ nav ul li button:hover {
 }
 </style>
 <body>
-   <header>
+   <main>
        <nav>
            <ul>
                <li><a href="#">Собери комплект</a></li>
@@ -256,10 +257,6 @@ nav ul li button:hover {
                <li><a href="#">3.Подбери посуду</a></li>
            </ul>
        </nav>
-   </header>
-   <main>
-       <section>
-       </section>
        <section>
            <img src="static/img/dushica.png" style="height:500px;width:500px;margin-top:1800px;margin-left:0px;">
            <p></p>
@@ -339,4 +336,4 @@ nav ul li button:hover {
        </section>
    </main>
 </body>
-</html>
+{% endblock %}
