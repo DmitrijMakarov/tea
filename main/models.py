@@ -35,3 +35,10 @@ class Product(models.Model):
 
 class SpecialProduct(models.Model):
     features = models.ForeignKey(to=Product, on_delete=models.CASCADE)
+
+
+class Reviews(models.Model):
+    name = models.CharField("Имя", max_length=100)
+    text = models.TextField("Сообщение", max_length=5000)
+    product = models.ForeignKey(Product, related_name='comments', on_delete=models.CASCADE)
+

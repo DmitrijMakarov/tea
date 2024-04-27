@@ -329,6 +329,10 @@ nav ul li button:hover {
           </div>
         </div>
         <div>
+          {% for review in context.review %}
+              <h3>review.name</h3>
+              <h3>review.text</h3>
+          {% endfor %}
           <h3>Пользователь</h3>
           <p>Комментарий</p>
           <h3>Пользователь</h3>
