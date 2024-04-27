@@ -2,10 +2,15 @@
 
 
 {% block content %}
+<div class="container">
     <h1>Авторизация</h1>
     <hr>
 
-    <form action="{% url 'login' %}" method="POST">
+    {% if form.errors %}
+        {{ form.errors }}
+    {% endif %}
+
+    <form action="" method="POST">
         {% csrf_token %}
 
         {% for item in form %}
@@ -14,11 +19,6 @@
         {% endfor %}
 
         <input type="submit" value="Войти">
-
     </form>
-
-    {% if form.errors %}
-        {{ form.errors }}
-    {% endif %}
-
+</div>
 {% endblock %}
