@@ -17,18 +17,10 @@
 
         <form action="" method="post" id="registration-form">
             {% csrf_token %}
-            <div class="form-group">
-                <label for="username">Имя пользователя:</label>
-                <input type="text" id="username" name="username" placeholder="Придумайте имя пользователя" required>
-            </div>
-            <div class="form-group">
-                <label for="email">Почта:</label>
-                <input type="email" id="email" name="email" placeholder="Введите свою почту" required>
-            </div>
-            <div class="form-group">
-                <label for="password">Пароль:</label>
-                <input type="password" id="password" name="password" placeholder="Придумайте пароль" required>
-            </div>
+            {% for item in form %}
+                <label>{{ item.label }}:</label><br>
+                {{ item }}
+            {% endfor %}
             <button class="btn btn-primary" type="submit">Зарегистрироваться</button>
         </form>
     </div>
