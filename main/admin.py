@@ -3,4 +3,4 @@ from .models import Product
 
 @admin.register(Product)
 class AdminProduct(admin.ModelAdmin):
-    pass
+    list_display = ["name", "type", "price", "description"]
