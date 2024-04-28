@@ -30,11 +30,15 @@ def delivery_page(request: WSGIRequest):
 
 def card_product(request: WSGIRequest):
     context = {}
+    Product(price=42, type_id=1).save()
     if request.method == "POST":
-        review = Reviews(name="Oleg", text="cool")
+
+        review = Reviews(name="Oleg", text="cool", product=Product.objects.get(id=1))
         review.save()
     else:
-        context["review"] = Reviews()
+        review = Reviews(name="Oleg2", text="cool2", product=Product.objects.get(id=1))
+        review.save()
+        context["reviews"] = Reviews.objects.all()
     return render(request, 'pages/card_product.html', context)
 
 
