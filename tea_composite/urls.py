@@ -3,6 +3,8 @@ from django.urls import path
 
 from main import views
 from django.contrib.auth import views as auth_views
+from django.conf.urls.static import static
+from django.conf import settings
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -15,5 +17,6 @@ urlpatterns = [
     path('card_product/', views.card_product, name='card_product'),
     path('logout/', auth_views.LogoutView.as_view(), name='logout'),
     path('register/', views.register_page, name='register'),
-]
+    path('catalog/', views.catalog, name='catalog'),
+] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 

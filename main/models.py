@@ -6,6 +6,7 @@ class Product(models.Model):
     type = models.CharField("Вид", max_length=20)
     price = models.IntegerField("Цена")
     description = models.TextField("Описание", max_length=100)
+    photo = models.ImageField("Изображение", upload_to="templates/tea_image", default="", blank=True)
 
     class Meta:
         verbose_name = "Товар"

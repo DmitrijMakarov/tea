@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Каталог</title>
+  </head>
+  <body>
+    {% for product in products %}
+    <div>
+      <h2>{{ product.name }}</h2>
+      {% if product.photo %}
+        <img scr="{{ product.photo.url }}" alt="{{ product.name }}">
+      {% endif %}
+      <div>{{ product.type }}</div>
+      <div>{{ product.price }}</div>
+      <div>{{ product.description }}</div>
+    </div>
+    {% endfor %}
+  </body>
+</html>

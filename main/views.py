@@ -2,6 +2,7 @@ from django.core.handlers.wsgi import WSGIRequest
 from django.shortcuts import render, redirect
 from django.contrib.auth import login, logout, authenticate
 from django.contrib.auth.models import User
+from .models import Product
 
 from main.forms import LoginUserForm, RegisterUserForm
 
@@ -68,3 +69,8 @@ def delivery_page(request: WSGIRequest):
 def card_product(request: WSGIRequest):
     context = {}
     return render(request, 'pages/card_product.html', context)
+
+def catalog(request):
+    products = Product.objects.all()
+    context = {"products": products}
+    return render(request, 'pages/Products_catalog.html', context)
