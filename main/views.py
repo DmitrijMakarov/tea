@@ -2,6 +2,7 @@ from django.core.handlers.wsgi import WSGIRequest
 from django.shortcuts import render
 from main.models import *
 
+from main.forms import ReviewForm
 
 def index_page(request: WSGIRequest):
     context = {}
@@ -30,15 +31,18 @@ def delivery_page(request: WSGIRequest):
 
 def card_product(request: WSGIRequest):
     context = {}
-    Product(price=42, type_id=1).save()
-    if request.method == "POST":
-
-        review = Reviews(name="Oleg", text="cool", product=Product.objects.get(id=1))
+    #Type(name="Tea", products={}).save()
+    #Product(type=Type.objects.get(id=1), price=42).save()
+    current_form = ReviewForm(request.POST)
+    if current_form.is_valid():
+        value = current_form.cleaned_data['str']
+        review = Reviews(name="Oleg", text=value, product=Product.objects.get(id=1))
         review.save()
-    else:
-        review = Reviews(name="Oleg2", text="cool2", product=Product.objects.get(id=1))
-        review.save()
-        context["reviews"] = Reviews.objects.all()
+    context["form"] = current_form
+    #review = Reviews(name="Oleg2", text="cool2", product=Product.objects.get(id=1))
+    #review.save()
+    context['form'] = ReviewForm()
+    context["reviews"] = Reviews.objects.all()
     return render(request, 'pages/card_product.html', context)
 
 

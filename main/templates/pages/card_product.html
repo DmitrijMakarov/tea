@@ -323,15 +323,17 @@ nav ul li button:hover {
         </article>
         <div>
           <h2>Оставьте отзыв</h2>
-          <div class="comm">
-            <input class="comment" type="text"  name="name" required minlength="1" maxlength="10000" size="10000" />
-            <button class="publ">Опубликовать</button>
-          </div>
+          <form class="comm" action="" method="post" id="review-form">
+              {% csrf_token %}
+              <!-- <input class="comment" type="text"  name="review" required minlength="1" maxlength="10000" size="10000" /> -->
+              {{ form.str }}
+              <input class="publ" type="submit" value="Опубликовать">
+          </form>
         </div>
         <div>
-          {% for review in context.reviews %}
+          {% for review in reviews %}
               <h3>{{ review.name }}</h3>
-              <h3>{{ review.text }}</h3>
+              <p>{{ review.text }}</p>
           {% endfor %}
           <h3>Пользователь</h3>
           <p>Комментарий</p>
