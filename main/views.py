@@ -31,8 +31,13 @@ def delivery_page(request: WSGIRequest):
 
 def card_product(request: WSGIRequest):
     context = {}
-    #Type(name="Tea", products={}).save()
-    #Product(type=Type.objects.get(id=1), price=42).save()
+    data = Type.objects.all()
+    if len(data) == 0:
+        Type(name="Tea", products={}).save()
+    data = Product.objects.all()
+    if len(data) == 0:
+        Product(type=Type.objects.get(id=1), price=42).save()
+
     current_form = ReviewForm(request.POST)
     if current_form.is_valid():
         value = current_form.cleaned_data['str']
