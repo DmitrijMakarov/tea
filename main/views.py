@@ -70,7 +70,11 @@ def card_product(request: WSGIRequest):
     context = {}
     return render(request, 'pages/card_product.html', context)
 
-def catalog(request):
+def catalog(request: WSGIRequest):
     products = Product.objects.all()
     context = {"products": products}
     return render(request, 'pages/Products_catalog.html', context)
+
+def product(request: WSGIRequest):
+    context = {}
+    return render(request, 'pages/product.html', context)
