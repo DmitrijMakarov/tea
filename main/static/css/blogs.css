@@ -7,6 +7,14 @@
   color: #fff;
 }
 
+.img-fluid_blg{
+    position: absolute;
+    left: 0;
+    object-fit: cover;
+    width: 605px;
+    height: 100%;
+}
+
 a:hover{
     color: #365e40 !important;
     text-decoration: none;
