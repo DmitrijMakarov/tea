@@ -1,8 +1,11 @@
-.card-text {
-    color: #fff;
+.card-text_blog {
+    color: #fff !important;
     text-decoration: none;
 }
 
+.card-body{
+  color: #fff;
+}
 
 a:hover{
     color: #365e40 !important;

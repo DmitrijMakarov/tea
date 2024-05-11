@@ -103,7 +103,7 @@ a:hover{
 }
 
 .carousel_blog{
-    margin: 100px 100px;
+    margin: 30px 100px;
 }
 
 .blog_text{
@@ -122,12 +122,15 @@ a:hover{
     margin: 100px 200px;
 }
 
+.card_send{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    flex-wrap: wrap;
+}
+
 .card-title_send{
     color: white;
 }
-
-.hstack {
-    display: flex;
-    align-items: center;
-}
-
