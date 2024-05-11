@@ -14,11 +14,14 @@ body {
     font-weight: 700 !important;
 }
 
-
 .main_logo{
-    weight: 20 px;
-    height: auto;
+    position: absolute;
+    left: 0;
+    object-fit: cover;
+    width: 20px;
+    height: 20px;
 }
+
 .navbar_element {
   background-color: black;
   height: 60px;
