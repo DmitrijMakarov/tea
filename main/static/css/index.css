@@ -122,13 +122,10 @@ a:hover{
     margin: 100px 200px;
 }
 
-.card_send{
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 10px 0;
-    flex-wrap: wrap;
+.card-img-overlay_send{
+    display: block;
+    margin-left: auto;
+    margin-right: auto
 }
 
 .card-title_send{
