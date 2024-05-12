@@ -187,19 +187,18 @@
     <a class="d-grid gap-2 col-4 mx-auto" href="/blogs/"><button class="more_tea">Показать больше</button></a>
 
     <div class="send">
-      <div class="card text-center text-bg-dark">
+      <div class="card text-bg-dark">
         <img src="{% static '/img/send.png' %}" class="card-img" alt="...">
-        <div class="card-img-overlay_send">
+        <div class="card-img-overlay text-center" style="width: 35rem; position: absolute; top: 50%; left: 50%; margin-right: -50%; transform: translate(-50%, -50%);">
           <img src="{% static '/img/почта.png' %}">
           <h3 class="card-title_send">Скидка -10%</h3>
           <p class="card-title_send">За подписку на наши новости</p>
-          <div class="hstack gap-3">
+          <div class="hstack_send text-center gap-3">
             <input class="form-control me-auto" type="text" placeholder="Email">
-            <button type="button" class="btn"><img src="{% static '/img/send-logo.png' %}"></button>
+            <button type="button" class="btn"><img class="btn_send" src="{% static '/img/send-logo.png' %}"></button>
           </div>
         </div>
       </div>
     </div>
-
   </body>
 {% endblock %}

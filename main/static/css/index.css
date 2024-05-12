@@ -122,10 +122,17 @@ a:hover{
     margin: 100px 200px;
 }
 
-.card-img-overlay_send{
-    display: block;
-    margin-left: auto;
-    margin-right: auto
+
+.hstack_send{
+    display: flex;
+    align-items: center;
+}
+
+.btn_send{
+    object-fit: cover;
+    width: 32px;
+    height: auto;
+    margin-left: -20px;
 }
 
 .card-title_send{
