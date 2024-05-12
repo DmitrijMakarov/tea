@@ -166,14 +166,16 @@ span {
           <div class="card">
             <div class="card__top">
               <a href="#" class="card__image">
-                <img src="./image/iphone-14-pro-max-gold.png" alt="Apple IPhone 14 PRO Max Gold"/>
+                {% if product.photo %}
+                  <img src="{{ product.photo.url }}" alt="{{ product.name }}">
+                {% endif %}
               </a>
               <div class="card__label">-20%</div>
             </div>
             <div class="card__bottom">
               <div class="card__prices">
                 <div class="card__price card__price--discount">{{product.price}}</div>
-                <div class="card__price card__price--common">{{product.price}}</div>
+                <div class="card__price card__price--common">{{product.upprice}}</div>
               </div>
               <a href="#" class="card__title">{{product.name}}</a>
               <button class="card__add">В корзину</button>
