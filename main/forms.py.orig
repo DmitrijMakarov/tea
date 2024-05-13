@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 from typing import Optional, List
 
 from django import forms
@@ -37,6 +38,9 @@ class RegisterUserForm(forms.Form):
     password1 = forms.CharField(label='Пароль', widget=forms.PasswordInput(attrs=attrs))
     password2 = forms.CharField(label='Повтор пароля',
                                 widget=forms.PasswordInput(attrs=attrs))
+=======
+from django import forms
+
 
 class ReviewForm(forms.Form):
     str = forms.CharField(
@@ -45,3 +49,4 @@ class ReviewForm(forms.Form):
         min_length=1,
         max_length=10000,
     )
+>>>>>>> feature/reviews

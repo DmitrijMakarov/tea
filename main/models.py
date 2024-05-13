@@ -35,3 +35,10 @@ class Product(models.Model):
 
 class SpecialProduct(models.Model):
     features = models.ForeignKey(to=Product, on_delete=models.CASCADE)
+
+
+class Reviews(models.Model):
+    name = models.CharField(max_length=100)
+    text = models.CharField(max_length=5000)
+    product = models.ForeignKey(to=Product, on_delete=models.CASCADE, default=1)
+
