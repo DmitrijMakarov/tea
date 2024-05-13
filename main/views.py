@@ -3,21 +3,25 @@ from django.shortcuts import render, redirect
 from django.contrib.auth import login, logout, authenticate
 from django.contrib.auth.models import User
 from main.models import *
+from .models import Product
 
 from main.forms import LoginUserForm, RegisterUserForm, ReviewForm
 
 
 def index_page(request: WSGIRequest):
-   context = {}
-   return render(request, 'pages/index.html', context)
+    context = {}
+    return render(request, 'pages/index.html', context)
+
 
 def blog_card_page(request: WSGIRequest):
-   context = {}
-   return render(request, 'pages/blog_card.html', context)
+    context = {}
+    return render(request, 'pages/blog_card.html', context)
+
 
 def blogs_page(request: WSGIRequest):
-   context = {}
-   return render(request, 'pages/blogs.html', context)
+    context = {}
+    return render(request, 'pages/blogs.html', context)
+
 
 def login_page(request: WSGIRequest):
     context = {
@@ -37,7 +41,6 @@ def login_page(request: WSGIRequest):
             context["form"] = form  # Внутри формы содержатся ошибки
 
     return render(request, 'registration/login.html', context)
-
 
 
 def register_page(request: WSGIRequest):
