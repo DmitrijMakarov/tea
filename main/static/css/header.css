@@ -25,6 +25,12 @@ body {
     align-items: center;
 }
 
+.navbar-nav_1{
+    display: flex;
+    align-items: center;
+    margin-left: 25px;
+}
+
 .nav-item_element{
     margin: 17px 10px;
     color: #fff;
@@ -66,9 +72,6 @@ a:hover{
     margin-left: 50px;
     color: #fff;
     text-decoration: none;
-}
-.navbar_head .main_logo{
-  margin-right 50%;
 }
 
 .img_head {

@@ -52,7 +52,7 @@
      <div class="card_new mb-3" style="max-width: 18rem;">
         <img src="{% static 'img/new_tea1.png' %}" class="card-img-top" alt="...">
         <div class="card-body_news">
-          <a class="card-title_news">Какой-то чай</a>
+          <a class="card-title_news" href="/card_product/">Какой-то чай</a>
           <p class="card-text">Красивое описание</p>
           <p class="card-text">Цена</p>
         </div>
@@ -61,7 +61,7 @@
       <div class="card_new mb-3" style="max-width: 18rem;">
         <img src="{% static '/img/new_tea2.png' %}" class="card-img-top" alt="...">
         <div class="card-body_news">
-          <a class="card-title_news">Какой-то чай</a>
+          <a class="card-title_news" href="/card_product/">Какой-то чай</a>
           <p class="card-text">Красивое описание</p>
           <p class="card-text">Цена</p>
         </div>
@@ -70,7 +70,7 @@
      <div class="card_new mb-3" style="max-width: 18rem;">
         <img src="{% static '/img/new_tea3.png' %}" class="card-img-top" alt="...">
         <div class="card-body_news">
-          <a class="card-title_news">Какой-то чай</a>
+          <a class="card-title_news" href="/card_product/">Какой-то чай</a>
           <p class="card-text">Красивое описание</p>
           <p class="card-text">Цена</p>
         </div>
@@ -79,7 +79,7 @@
      <div class="card_new mb-3" style="max-width: 18rem;">
         <img src="{% static '/img/new_tea4.png' %}" class="card-img-top" alt="...">
         <div class="card-body_news">
-          <a class="card-title_news">Какой-то чай</a>
+          <a class="card-title_news" href="/card_product/">Какой-то чай</a>
           <p class="card-text">Красивое описание</p>
           <p class="card-text">Цена</p>
         </div>
@@ -102,7 +102,7 @@
      <div class="card_new mb-3" style="max-width: 18rem;">
         <img src="{% static '/img/new_tea5.png' %}" class="card-img-top" alt="...">
         <div class="card-body_news">
-          <a class="card-title_news">Какой-то чай</a>
+          <a class="card-title_news" href="/card_product/">Какой-то чай</a>
           <p class="card-text">Красивое описание</p>
           <p class="card-text">Цена</p>
         </div>
@@ -111,7 +111,7 @@
       <div class="card_new mb-3" style="max-width: 18rem;">
         <img src="{% static '/img/new_tea6.png' %}" class="card-img-top" alt="...">
         <div class="card-body_news">
-          <a class="card-title_news">Какой-то чай</a>
+          <a class="card-title_news" href="/card_product/">Какой-то чай</a>
           <p class="card-text">Красивое описание</p>
           <p class="card-text">Цена</p>
         </div>
@@ -120,7 +120,7 @@
      <div class="card_new mb-3" style="max-width: 18rem;">
         <img src="{% static '/img/supplement1.png' %}" class="card-img-top" alt="...">
         <div class="card-body_news">
-          <a class="card-title_news">Какая-то добавка</a>
+          <a class="card-title_news" href="/card_product/">Какая-то добавка</a>
           <p class="card-text">Красивое описание</p>
           <p class="card-text">Цена</p>
         </div>
@@ -129,16 +129,15 @@
      <div class="card_new mb-3" style="max-width: 18rem;">
         <img src="{% static '/img/supplement2.png' %}" class="card-img-top" alt="...">
         <div class="card-body_news">
-          <a class="card-title_news">Какая-то добавка</a>
+          <a class="card-title_news" href="/card_product/">Какая-то добавка</a>
           <p class="card-text">Красивое описание</p>
           <p class="card-text">Цена</p>
         </div>
       </div>
     </div>
-    <div class="d-grid gap-2 col-4 mx-auto">
-      <button class="more_tea">Показать больше</button>
-    </div>
-    <h1 class="blog_text_hi text-center" >Блоги</h1>
+    <a class="d-grid gap-2 col-4 mx-auto" href="/blogs/"><button class="more_tea">Показать больше</button></a>
+    <br>
+    <br><h1 class="t_h1 text-center" >Блоги</h1>
     <div class="carousel_blog">
       <div id="carouselExampleCaptions" class="carousel slide">
         <div class="carousel-indicators">
@@ -151,7 +150,7 @@
             <img src="{% static '/img/blog1.png' %}" class="d-block w-100" alt="...">
             <div class="carousel-caption d-none d-md-block">
               <div class="blog_text">
-                <a class="blog_link" href="#">Состав чая</a>
+                <a class="blog_link" href="/blog/">Состав чая</a>
                 <h5>28 просмотров</h5>
               </div>
             </div>
@@ -160,7 +159,7 @@
             <img src="{% static '/img/blog2.jpg' %}" class="d-block w-100" alt="...">
             <div class="carousel-caption d-none d-md-block">
               <div class="blog_text">
-                <a class="blog_link" href="#">О полезных свойствах чая</a>
+                <a class="blog_link" href="/blog/">О полезных свойствах чая</a>
                 <h5>127 просмотров</h5>
               </div>
             </div>
@@ -169,7 +168,7 @@
             <img src="{% static '/img/blog3.jpg' %}" class="d-block w-100" alt="...">
             <div class="carousel-caption d-none d-md-block">
               <div class="blog_text">
-                <a class="blog_link" href="/">Польза зеленого чая</a>
+                <a class="blog_link" href="/blog/">Польза зеленого чая</a>
                 <h5>17 просмотров</h5>
               </div>
             </div>
@@ -186,16 +185,17 @@
       </div>
     </div>
     <a class="d-grid gap-2 col-4 mx-auto" href="/blogs/"><button class="more_tea">Показать больше</button></a>
+
     <div class="send">
-      <div class="card text-center text-bg-dark">
+      <div class="card text-bg-dark">
         <img src="{% static '/img/send.png' %}" class="card-img" alt="...">
-        <div class="card-img-overlay">
+        <div class="card-img-overlay text-center" style="width: 35rem; position: absolute; top: 50%; left: 50%; margin-right: -50%; transform: translate(-50%, -50%);">
           <img src="{% static '/img/почта.png' %}">
           <h3 class="card-title_send">Скидка -10%</h3>
           <p class="card-title_send">За подписку на наши новости</p>
-          <div class="hstack gap-3">
+          <div class="hstack_send text-center gap-3">
             <input class="form-control me-auto" type="text" placeholder="Email">
-            <button type="button" class="btn"><img src="{% static '/img/send-logo.png' %}"></button>
+            <button type="button" class="btn"><img class="btn_send" src="{% static '/img/send-logo.png' %}"></button>
           </div>
         </div>
       </div>

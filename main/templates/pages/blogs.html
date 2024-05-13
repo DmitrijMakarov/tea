@@ -1,21 +1,21 @@
 {% extends 'base/base.html' %}
 {% load static %}
 
-{% block extra_css %} <link href="{% static '/css/blogs.css' %}" rel="stylesheet">{% endblock %}
+{% block extra_css %}<link href="{% static '/css/blogs.css' %}" rel="stylesheet">{% endblock %}
 
 {% block content %}
   <body>
     <h2 class="text-center">Все блоги</h2>
-    <div class="card mb-3 text-center" style="max-hight: 100vh;">
+    <div class="card mb-3 text-center">
       <div class="row g-0">
         <div class="col-md-4">
-          <img src="{% static '/img/blog1.png' %}" class="img-fluid float-start" alt="...">
+          <img src="{% static '/img/blog1.png' %}" class="img-fluid_blg rounded-start" alt="...">
         </div>
         <div class="col-md-8">
           <div class="card-body">
-            <h2 class="card-text">Состав чая</h2>
-            <p class="card-text">Чайный лист – кладезь витаминов и минеральных веществ. Об этом знали ещё наши прародители, за что и полюбили чай. Какие тайны хранит чайный лист? От каких факторов зависит химический состав чая? Есть ли вредные составляющие?</p>
-            <a class="card-text d-grid gap-2 col-4 mx-auto"><button type="button" class="btn btn-outline-light">Читать дальше</button></a>
+            <h2 class="card-text_blog">Состав чая</h2>
+            <p class="card-text_blog">Чайный лист – кладезь витаминов и минеральных веществ. Об этом знали ещё наши прародители, за что и полюбили чай. Какие тайны хранит чайный лист? От каких факторов зависит химический состав чая? Есть ли вредные составляющие?</p>
+            <a class="card-text_blog d-grid gap-2 col-4 mx-auto" href="/blog/"><button type="button" class="btn btn-outline-light">Читать дальше</button></a>
           </div>
         </div>
       </div>
@@ -24,13 +24,13 @@
     <div class="card mb-3 text-center" style="max-hight: 100vh;">
       <div class="row g-0">
         <div class="col-md-4 ">
-          <img src="{% static '/img/blog2.jpg' %}" class="img-fluid float-start" alt="...">
+          <img src="{% static '/img/blog2.jpg' %}" class="img-fluid_blg float-start" alt="...">
         </div>
         <div class="col-md-8">
           <div class="card-body">
-            <h2 class="card-text">О полезных свойствах чая</h2>
-            <p class="card-text">Первое применение чайный лист нашёл в традиционной китайской медицине – ещё легендарный Шен Нун, первооткрыватель чайного дерева, использовал его как противоядие. В первом тысячелетии до н.э. чай употребляли исключительно в медицинских целях. Чем же заваренный лист заслужил такое почтение? Как чай влияет на организм человека?</p>
-            <a class="card-text d-grid gap-2 col-4 mx-auto"><button type="button" class="btn btn-outline-light">Читать дальше</button></a>
+            <h2 class="card-text_blog">О полезных свойствах чая</h2>
+            <p class="card-text_blog">Первое применение чайный лист нашёл в традиционной китайской медицине – ещё легендарный Шен Нун, первооткрыватель чайного дерева, использовал его как противоядие. В первом тысячелетии до н.э. чай употребляли исключительно в медицинских целях. Чем же заваренный лист заслужил такое почтение? Как чай влияет на организм человека?</p>
+            <a class="card-text_blog d-grid gap-2 col-4 mx-auto" href="/blog/"><button type="button" class="btn btn-outline-light">Читать дальше</button></a>
           </div>
         </div>
       </div>
@@ -39,13 +39,13 @@
       <div class="card mb-3 text-center" style="max-hight: 100vh;">
       <div class="row g-0">
         <div class="col-md-4">
-          <img src="{% static '/img/blog3.jpg' %}" class="img-fluid float-start" alt="...">
+          <img src="{% static '/img/blog3.jpg' %}" class="img-fluid_blg float-start" alt="...">
         </div>
         <div class="col-md-8">
           <div class="card-body">
-            <h2 class="card-text">Польза зеленого чая</h2>
-              <p class="card-text">При производстве зеленого чая процессов ферментативного окисления стараются не допустить. Объясняясь проще, в чайных почках и листьях остаются те же вещества, которые изначально есть в “живом” несорванном листе. Благодаря этому зеленый чай обладает невероятной пользой для здоровья. Какой?</p>
-            <a class="card-text d-grid gap-2 col-4 mx-auto"><button type="button" class="btn btn-outline-light">Читать дальше</button></a>
+            <h2 class="card-text_blog">Польза зеленого чая</h2>
+              <p class="card-text_blog">При производстве зеленого чая процессов ферментативного окисления стараются не допустить. Объясняясь проще, в чайных почках и листьях остаются те же вещества, которые изначально есть в “живом” несорванном листе. Благодаря этому зеленый чай обладает невероятной пользой для здоровья. Какой?</p>
+            <a class="card-text_blog d-grid gap-2 col-4 mx-auto" href="/blog/"><button type="button" class="btn btn-outline-light">Читать дальше</button></a>
           </div>
         </div>
       </div>

@@ -1,8 +1,19 @@
-.card-text {
-    color: #fff;
+.card-text_blog {
+    color: #fff !important;
     text-decoration: none;
 }
 
+.card-body{
+  color: #fff;
+}
+
+.img-fluid_blg{
+    position: absolute;
+    left: 0;
+    object-fit: cover;
+    width: 635px;
+    height: 100%;
+}
 
 a:hover{
     color: #365e40 !important;

@@ -42,6 +42,35 @@
               <button class="add"></button>
               <button class="add"></button>
           </div>
+<<<<<<< HEAD
+          <div class="names1">
+                <p class="pr1">Название продукта</p>
+                <p class="pr1">Название продукта</p>
+                <p class="pr1">Название продукта</p>
+                <p class="pr1">Название продукта</p>
+          </div>
+        </article>
+        <div>
+          <h2>Оставьте отзыв</h2>
+          <form class="comm" action="" method="post" id="review-form">
+              {% csrf_token %}
+              <!-- <input class="comment" type="text"  name="review" required minlength="1" maxlength="10000" size="10000" /> -->
+              {{ form.str }}
+              <input class="publ" type="submit" value="Опубликовать">
+          </form>
+        </div>
+        <div>
+          {% for review in reviews %}
+              <h3>{{ review.name }}</h3>
+              <p>{{ review.text }}</p>
+          {% endfor %}
+          <h3>Пользователь</h3>
+          <p>Комментарий</p>
+          <h3>Пользователь</h3>
+          <p>Комментарий</p>
+          <h3>Пользователь</h3>
+          <p>Комментарий</p>
+=======
           <div class="names">
               <p class="pr">Название продукта</p>
               <p class="pr">Название продукта</p>
@@ -62,6 +91,7 @@
               <p class="pr1">Название продукта</p>
               <p class="pr1">Название продукта</p>
               <p class="pr1">Название продукта</p>
+>>>>>>> feature/page_transitions
         </div>
       </article>
       <div>

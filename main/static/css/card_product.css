@@ -1,0 +1,237 @@
+body {
+   font-family: Arial, sans-serif;
+   margin: 0;
+   padding: 0;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 100vh;
+   color: #333;
+}
+
+
+nav ul {
+   display: flex;
+   justify-content: space-around;
+   list-style: none;
+   padding: 0;
+}
+
+nav ul li a {
+   text-decoration: none;
+   color: #333;
+}
+
+main {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   margin-top: 50px;
+}
+
+.product {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   width: 100%;
+   padding-top: 100px;
+}
+.pr_1{
+  width:100px;
+  height:100px;
+}
+.product img {
+   width: 100px;
+   height: 100px;
+   background-color: #f8f9fa;
+   margin-right: 20px;
+}
+
+.product p {
+   width: 50%;
+}
+
+.product button {
+   background-color: #f8f9fa;
+   border: none;
+   padding: 10px 20px;
+   margin-top: 20px;
+}
+
+.blog {
+   width: 80%;
+   margin-top: 50px;
+}
+
+.blog article {
+   border-bottom: 1px solid #ddd;
+   padding: 20px 0;
+}
+
+.blog article:last-child {
+   border-bottom: none;
+}
+.buy{
+  width:400px;
+  height:100px;
+  background-color:red;
+  font-size:26px;
+  color:white;
+  font-family:sans-serif;
+  margin-left:50px;
+}
+nav ul li button {
+   width:75px;
+   height:75px;
+   font-family:sens-serif;
+   font-size:15px;
+}
+nav ul li button:hover {
+   background-color:black;
+   color:white;
+}
+.charact{
+  font-family:sens-serif;
+  font-size:18px;
+  width:800px;
+  height:250px;
+  margin-right:50px;
+}
+.char{
+  font-family:sens-serif;
+  font-size:28px;
+  margin-right:400px;
+}
+1{
+   display: flex;
+   justify-content: space-around;
+   list-style: none;
+
+}
+2{
+   display: flex;
+   justify-content: space-around;
+   list-style: none;
+
+}
+.deliv{
+  width:300px;
+  height:50px;
+  font-family:sens-serif;
+  font-size:18px;
+  margin-left:300px;
+  border:3px solid red;
+  text-align:center;
+  padding-top:25px;
+}
+.del{
+  font-family:sens-serif;
+  font-size:28px;
+  margin-left:500px;
+}
+.additions{
+  margin-left:-200px;
+}
+
+3{
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+}
+.wrap {
+ width: 1310px;
+ margin-left:0px;
+ height: 120px;
+}
+.add {
+  float: left;
+  line-height: 120px;
+  font-size: 40px;
+  color: white;
+  width: 300px;
+  height: 300px;
+  background-repeat: no-repeat;
+  margin-right: 10px;
+  text-align: center;
+  background-image: url();
+  background-position:center;
+  background-size:450px 450px;
+}
+.wrap1 {
+ width: 1310px;
+ margin-left:0px;
+ height: 120px;
+}
+.add1 {
+  float: left;
+  line-height: 120px;
+  font-size: 40px;
+  color: white;
+  width: 300px;
+  height: 300px;
+  background-repeat: no-repeat;
+  margin-right: 10px;
+  text-align: center;
+  background-image: url();
+  background-position:center;
+  background-size:450px 450px;
+}
+.additions1{
+  margin-left:-200px;
+  text-align:left;
+}
+.names {
+ width: 1310px;
+ margin-left:0px;
+ height: 40px;
+}
+.pr {
+  float: left;
+  line-height: 40px;
+  font-size: 20px;
+  color: black;
+  width: 300px;
+  height: 100px;
+  margin-right: 10px;
+  text-align: center;
+  margin-top:px;
+}
+.names1 {
+ width: 1310px;
+ margin-left:0px;
+ height: 40px;
+}
+.pr1 {
+  float: left;
+  line-height: 40px;
+  font-size: 20px;
+  font-family:sens-serif;
+  color: black;
+  width: 300px;
+  height: 100px;
+  margin-right: 10px;
+  text-align: center;
+  margin-top:px;
+}
+.comment{
+  width:800px;
+  font-size: 18px;
+  font-family:sens-serif;
+  margin-left:-130px;
+}
+.comm{
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+}
+.publ{
+  width:200px;
+  font-size: 18px;
+  font-family:sens-serif;
+  margin-left:-220px;
+  text-align:center;
+}
+.publ:hover{
+   background-color:black;
+   color:white;
+}
