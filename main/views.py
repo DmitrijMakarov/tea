@@ -85,3 +85,16 @@ def card_product(request: WSGIRequest):
 def delivery_page(request: WSGIRequest):
    context = {}
    return render(request, 'pages/delivery.html', context)
+
+
+def catalog(request: WSGIRequest):
+    products = Product.objects.all()
+    for i in range(len(products)):
+        products[i].upprice = products[i].price * 1.2  - 0.01
+        products[i].price = products[i].price - 0.01
+    context = {"products": products}
+    return render(request, 'pages/Products_catalog.html', context)
+
+def product(request: WSGIRequest):
+    context = {}
+    return render(request, 'pages/product.html', context)
