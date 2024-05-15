@@ -98,3 +98,7 @@ def catalog(request: WSGIRequest):
 def product(request: WSGIRequest):
     context = {}
     return render(request, 'pages/product.html', context)
+
+def help(request: WSGIRequest):
+    context = {}
+    return render(request, 'pages/help_page.html', context)
