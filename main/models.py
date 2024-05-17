@@ -16,6 +16,18 @@ class Product(models.Model):
         return self.name
 
 
+class Favourites(models.Model):
+    user_id = models.IntegerField("Айди_пользователя")
+    product_id = models.IntegerField("Айди_продукта")
+
+    class Meta:
+        verbose_name = "Любимое"
+        verbose_name_plural = "Любимое"
+
+    def __str__(self):
+        return self.name
+
+
 class Reviews(models.Model):
     name = models.CharField(max_length=100)
     text = models.CharField(max_length=5000)

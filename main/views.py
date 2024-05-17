@@ -102,3 +102,7 @@ def product(request: WSGIRequest):
 def help(request: WSGIRequest):
     context = {}
     return render(request, 'pages/help_page.html', context)
+
+def favourites(request: WSGIRequest):
+    context = {}
+    return render(request, 'pages/Favourites.html', context)
