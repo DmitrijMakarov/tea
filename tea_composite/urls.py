@@ -20,5 +20,6 @@ urlpatterns = [
     path('catalog/', views.catalog, name='catalog'),
     path('product/', views.product, name='product'),
     path('help/', views.help, name='help'),
+    path('change_data/', views.change_data_page, name='change_data'),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 

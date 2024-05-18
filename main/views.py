@@ -23,6 +23,11 @@ def blogs_page(request: WSGIRequest):
     return render(request, 'pages/blogs.html', context)
 
 
+def change_data_page(request: WSGIRequest):
+    context = {}
+    return render(request, 'pages/change_data.html', context)
+
+
 def login_page(request: WSGIRequest):
     context = {
         "form": LoginUserForm(),
@@ -61,6 +66,7 @@ def register_page(request: WSGIRequest):
 
     return render(request, "registration/reg.html", context)
 
+
 def card_product(request: WSGIRequest):
     context = {}
     data = Type.objects.all()
@@ -81,6 +87,7 @@ def card_product(request: WSGIRequest):
     context['form'] = ReviewForm()
     context["reviews"] = Reviews.objects.all()
     return render(request, 'pages/card_product.html', context)
+
 
 def delivery_page(request: WSGIRequest):
    context = {}

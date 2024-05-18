@@ -1,0 +1,127 @@
+{% extends 'base/base.html' %}
+{% load static %}
+
+{% block extra_css %}<link href="{% static '/css/blogs.css' %}" rel="stylesheet">{% endblock %}
+
+{% block content %}
+    <style>
+     body {
+       .layer1 {
+         margin-top: 35px; /* Отступ сверху */
+       }
+       .layer2 {
+         margin-top: 10px; /* Отступ сверху */
+         margin-left: 20px; /* Отступ слева */
+       }
+       .layer3 {
+         margin-top: 10px; /* Отступ сверху */
+         margin-left: -280px; /* Отступ слева */
+       }
+       .layer4 {
+         margin-top: 10px; /* Отступ сверху */
+         margin-left: -570px; /* Отступ слева */
+       }
+       .layer5 {
+         margin-top: 20px; /* Отступ сверху */
+         margin-left: -570px; /* Отступ слева */
+       }
+       .layer6 {
+         margin-top: 35px; /* Отступ сверху */
+         margin-left: 25px; /* Отступ слева */
+       }
+       .layer7 {
+         margin-top: 30px; /* Отступ сверху */
+       }
+       .layer8 {
+         margin-top: 15px; /* Отступ сверху */
+       }
+       .layer9 {
+         margin-top: 0px; /* Отступ сверху */
+         margin-left: -110px; /* Отступ слева */
+         margin-right: -100px; /* Отступ справа */
+       }
+       .comm{
+         display: flex;
+         justify-content: space-around;
+         list-style: none;
+       }
+       .comment{
+         width:400px;
+         font-size: 18px;
+         font-family:sens-serif;
+         margin-left:-160px;
+       }
+       .btn-circle {
+         width: 38px;
+         height: 38px;
+         border-radius: 19px;
+         text-align: center;
+         padding-left: 0;
+         padding-right: 0;
+         font-size: 16px;
+       }
+     }
+    </style>
+  <body>
+      <div class="text-container">
+          <h5 style="text-indent:20px">Профиль</h5>
+      </div>
+
+      <div class="container-fluid">
+        <div class="row">
+            <div class="col">
+                <h5 style="text-indent:20px">Мой аккаунт</h5>
+                <button type="button" class="btn btn-dark layer2">Выйти</button>
+            </div>
+
+            <div class="col">
+                <h5 style="text-indent:20px">Персональная информация</h5>
+                <h6 class="layer8" style="text-indent:20px">Имя*</h6>
+                <div class="comm">
+                  <input class="comment" type="text" name="name" required minlength="1" maxlength="10000" size="10000" />
+                </div>
+                <h6 class="layer7" style="text-indent:20px">Почта*</h6>
+                <div class="comm">
+                  <input class="comment" type="text" name="name" required minlength="1" maxlength="10000" size="10000" />
+                </div>
+                <h6 class="layer7" style="text-indent:20px">Ник*</h6>
+                <div class="comm">
+                  <input class="comment" type="text" name="name" required minlength="1" maxlength="10000" size="10000" />
+                </div>
+
+                <h5 class="layer7" style="text-indent:20px">Поменять пароль</h5>
+                <h6 class="layer8" style="text-indent:20px">Текущий пароль</h6>
+                <div class="comm">
+                  <input class="comment" type="text" name="name" required minlength="1" maxlength="10000" size="10000" />
+                </div>
+                <h6 class="layer7" style="text-indent:20px">Новый пароль</h6>
+                <div class="comm">
+                  <input class="comment" type="text" name="name" required minlength="1" maxlength="10000" size="10000" />
+                </div>
+                <h6 class="layer7" style="text-indent:20px">Повторите пароль</h6>
+                <div class="comm">
+                  <input class="comment" type="text" name="name" required minlength="1" maxlength="10000" size="10000" />
+                </div>
+                <button type="button" class="btn btn-dark layer6">Сменить</button>
+            </div>
+            <div class="col layer1">
+                <h6 style="text-indent:20px">Фамилия*</h6>
+                <div class="comm">
+                  <input class="comment" type="text" name="name" required minlength="1" maxlength="10000" size="10000" />
+                </div>
+                <h6 class="layer7" style="text-indent:20px">Номер телефона*</h6>
+                <div class="comm">
+                  <button type="button" class="btn btn-white layer9">+7</button>
+                  <input class="comment" type="text" name="name" required minlength="1" maxlength="10000" size="10000" />
+                </div>
+                <h6 class="layer7" style="text-indent:20px">Фото</h6>
+                <div class="comm">
+                  <button type="button" class="btn btn-primary btn-circle btn-light layer3">🏞️</button>
+                  <button type="button" class="btn btn-dark layer4">Сменить</button>
+                  <h6 class="layer5">Перевыбрать</h6>
+                </div>
+            </div>
+        </div>
+      </div>
+  </body>
+{% endblock %}
