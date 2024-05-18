@@ -13,9 +13,19 @@ def index_page(request: WSGIRequest):
     return render(request, 'pages/index.html', context)
 
 
-def blog_card_page(request: WSGIRequest):
+def blog1(request: WSGIRequest):
     context = {}
-    return render(request, 'pages/blog_card.html', context)
+    return render(request, 'pages/blog1.html', context)
+
+
+def blog2(request: WSGIRequest):
+    context = {}
+    return render(request, 'pages/blog2.html', context)
+
+
+def blog3(request: WSGIRequest):
+    context = {}
+    return render(request, 'pages/blog3.html', context)
 
 
 def blogs_page(request: WSGIRequest):
