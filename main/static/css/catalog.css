@@ -151,3 +151,34 @@ span {
   background-color: #ff6633;
   color: #fff;
 }
+
+#heart {
+  position: relative;
+  cursor: pointer;
+  left: 170px;
+  width: 50px;
+  height: 45px;
+  margin-top: 5px;
+}
+
+#heart::before, #heart::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 26px;
+  height: 40px;
+  border-radius: 25px 25px 0 0;
+  background-color: #d1d1d1;
+}
+
+#heart::before {
+  left: 25px;
+  transform: rotate(-45deg);
+  transform-origin: 0 100%;
+}
+
+#heart::after {
+  left: 0;
+  transform: rotate(45deg);
+  transform-origin: 100% 100%;
+}
