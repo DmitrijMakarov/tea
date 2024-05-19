@@ -1,0 +1,28 @@
+{% load static %}
+{% block extra_css %}<link href="{% static '/css/catalog.css' %}" rel="stylesheet">{% endblock %}
+{% block content %}
+  <div class="one_cardd">
+    <span>
+      <div class="cardd">
+        <div class="cardd__top">
+          <a href="#" class="cardd__image">
+            {% if product.photo %}
+              <img src="{{ product.photo.url }}" alt="{{ product.name }}">
+            {% endif %}
+          </a>
+<!--           ----------------------СТРОЧКА НИЖЕ --СЕРДЦЕ  -->
+          <div id="heart"></div>
+          <div class="cardd__label">-20%</div>
+        </div>
+        <div class="cardd__bottom">
+          <div class="cardd__prices">
+            <div class="cardd__price cardd__price--discount">{{product.price}}</div>
+            <div class="cardd__price cardd__price--common">{{product.upprice}}</div>
+          </div>
+          <a href="#" class="cardd__title">{{product.name}}</a>
+          <button class="cardd__add">В корзину</button>
+        </div>
+      </div>
+    </span>
+  </div>
+{% endblock %}

@@ -1,5 +1,6 @@
 {% extends 'base/base.html' %}
 {% load static %}
+{% block extra_css %}<link href="{% static '/css/catalog.css' %}" rel="stylesheet">{% endblock %}
 {% block content %}
   <body>
     <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
@@ -49,41 +50,11 @@
     <h1 class="text-center" >Новинки</h1>
 
     <div class="card-group">
-     <div class="card_new mb-3" style="max-width: 18rem;">
-        <img src="{% static 'img/new_tea1.png' %}" class="card-img-top" alt="...">
-        <div class="card-body_news">
-          <a class="card-title_news" href="/card_product/">Какой-то чай</a>
-          <p class="card-text">Красивое описание</p>
-          <p class="card-text">Цена</p>
-        </div>
-      </div>
-
-      <div class="card_new mb-3" style="max-width: 18rem;">
-        <img src="{% static '/img/new_tea2.png' %}" class="card-img-top" alt="...">
-        <div class="card-body_news">
-          <a class="card-title_news" href="/card_product/">Какой-то чай</a>
-          <p class="card-text">Красивое описание</p>
-          <p class="card-text">Цена</p>
-        </div>
-      </div>
-
-     <div class="card_new mb-3" style="max-width: 18rem;">
-        <img src="{% static '/img/new_tea3.png' %}" class="card-img-top" alt="...">
-        <div class="card-body_news">
-          <a class="card-title_news" href="/card_product/">Какой-то чай</a>
-          <p class="card-text">Красивое описание</p>
-          <p class="card-text">Цена</p>
-        </div>
-      </div>
-
-     <div class="card_new mb-3" style="max-width: 18rem;">
-        <img src="{% static '/img/new_tea4.png' %}" class="card-img-top" alt="...">
-        <div class="card-body_news">
-          <a class="card-title_news" href="/card_product/">Какой-то чай</a>
-          <p class="card-text">Красивое описание</p>
-          <p class="card-text">Цена</p>
-        </div>
-      </div>
+     {% for product in products %}
+      {% if product.type == "Добавка" and product.id < 7 %}
+        {% include 'base/card.html' %}
+      {% endif %}
+    {% endfor %}
     </div>
     <div class="d-grid gap-2 col-4 mx-auto">
     <a class="d-grid gap-2 col-4 mx-auto" href="/catalog/"><button class="more_tea">Показать больше</button></a>
