@@ -9,7 +9,11 @@ from main.forms import LoginUserForm, RegisterUserForm, ReviewForm
 
 
 def index_page(request: WSGIRequest):
-    context = {}
+    products = Product.objects.all()
+    for i in range(len(products)):
+        products[i].upprice = products[i].price * 1.2 - 0.01
+        products[i].price = products[i].price - 0.01
+    context = {"products": products}
     return render(request, 'pages/index.html', context)
 
 

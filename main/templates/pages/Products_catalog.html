@@ -5,31 +5,32 @@
 
 {% block content %}
   <body>
+    <div class="tur-tur"><h2>Чай-основа</h2></div>
     {% for product in products %}
-      <div class="one_card">
-        <span>
-          <div class="card">
-            <div class="card__top">
-              <a href="#" class="card__image">
-                {% if product.photo %}
-                  <img src="{{ product.photo.url }}" alt="{{ product.name }}">
-                {% endif %}
-              </a>
-<!--           ----------------------СТРОЧКА НИЖЕ --СЕРДЦЕ  -->
-              <div id="heart"></div>
-              <div class="card__label">-20%</div>
-            </div>
-            <div class="card__bottom">
-              <div class="card__prices">
-                <div class="card__price card__price--discount">{{product.price}}</div>
-                <div class="card__price card__price--common">{{product.upprice}}</div>
-              </div>
-              <a href="#" class="card__title">{{product.name}}</a>
-              <button class="card__add">В корзину</button>
-            </div>
-          </div>
-        </span>
-      </div>
+      {% if product.type == "Чай-основа" %}
+        {% include 'base/card.html' %}
+      {% endif %}
+    {% endfor %}
+
+    <div class="tur-tur"><h2>Добавки</h2></div>
+    {% for product in products %}
+      {% if product.type == "Добавка" %}
+        {% include 'base/card.html' %}
+      {% endif %}
+    {% endfor %}
+
+    <div class="tur-tur"><h2>Посуда</h2></div>
+    {% for product in products %}
+      {% if product.type == "Посуда" %}
+        {% include 'base/card.html' %}
+      {% endif %}
+    {% endfor %}
+
+    <div class="tur-tur"><h2>Готовые наборы</h2></div>
+    {% for product in products %}
+      {% if product.type == "Готовый набор" %}
+        {% include 'base/card.html' %}
+      {% endif %}
     {% endfor %}
   </body>
 {% endblock %}

@@ -27,6 +27,12 @@ class Favourites(models.Model):
     def __str__(self):
         return self.name
 
+class Type(models.Model):
+    name = models.CharField(max_length=200)
+    products = models.JSONField()  # список сочетающихся и несочетающихся товаров
+
+class SpecialProduct(models.Model):
+    features = models.ForeignKey(to=Product, on_delete=models.CASCADE)
 
 class Reviews(models.Model):
     name = models.CharField(max_length=100)
